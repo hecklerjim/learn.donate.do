@@ -53,3 +53,17 @@ function copyFunction() {
   /* Alert the copied text */
   alert("Copied the text: " + copyText.value);
 }
+
+// CONTENT LOADERS
+
+function navLoader(){
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+}
+
+function footerLoader(){
+  $(function(){
+    $("#footer-placeholder").load("footer.html");
+  });
+  }
