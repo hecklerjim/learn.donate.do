@@ -1,0 +1,211 @@
+:root {
+  --dark-color: #121212;
+  --light-color: #ECE2D0;
+  --accent-color: #CEBEBE;
+  --accent-color2: rgb(138, 116, 117);
+  --accent-color3: #6D2E46;
+  --grey-color: grey;
+
+  --group1: #5C6B73;
+  --group2: rgb(137, 101, 138);
+  --group3: #09814A;
+  --group4: #2d7f9d;
+  --group5: #C44900;
+  --group6: rgb(168, 135, 24);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--light-color);
+  padding: 1% 4%;
+}
+
+/* BOOTSTRAP */
+
+.bg-light {
+  background-color: var(--accent-color) !important;
+}
+
+.card-header {
+  font-size: 2rem;
+  font-family: "DM Serif Display", 'Times New Roman', Times, serif;
+}
+
+.card {
+  color: var(--dark-color)!important;
+}
+
+.btn-link {
+  color: var(--dark-color);
+}
+
+.btn-link:hover {
+  color: var(--dark-color);
+}
+
+.country {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.btn-outline-secondary {
+  color: var(--accent-color2);
+  border: 1px solid var(--accent-color2);
+  cursor: pointer;
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus {
+  background-color: var(--accent-color2);
+  border: 1px solid var(--accent-color2);
+  color: var(--light-color)
+} 
+
+.navbar-collapse.collapse.in {
+  display: block!important;
+}
+
+.collapse.in {
+  display: block !important;
+}
+
+.card {
+  height: 97%;
+}
+
+/* BASIC CSS */
+
+h1 {
+  font-family: "DM Serif Display", 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  text-transform: none !important;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-family: "Jost", "Open Sans", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-family: "Jost", "Open Sans", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: var(--accent-color2)
+}
+
+a:hover, a:active, a:visited {
+  color: var(--accent-color3)
+}
+
+.filter-links {
+  border: 2px solid var(--accent-color2);
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 1%;
+}
+
+/* GROUP COLORING */
+
+.group_1 div {
+  border: 1px solid var(--group1);
+}
+.group_2 div {
+  border: 1px solid var(--group2);
+}
+.group_3 div {
+  border: 1px solid var(--group3);
+}
+.group_4 div {
+  border: 1px solid var(--group4);
+}
+.group_5 div {
+  border: 1px solid var(--group5);
+}
+.group_6 div {
+  border: 1px solid var(--group6);
+}
+
+.group_1 a {
+  color: var(--group1);
+}
+.group_2 a {
+  color: var(--group2);
+}
+.group_3 a {
+  color: var(--group3);
+}
+.group_4 a {
+  color: var(--group4);
+}
+.group_5 a {
+  color: var(--group5);
+}
+.group_6 a {
+  color: var(--group6);
+}
+
+.group_1 .btn-outline-secondary {
+  border: solid 1px var(--group1);
+}
+.group_2 .btn-outline-secondary {
+  border: solid 1px var(--group2);
+}
+.group_3 .btn-outline-secondary {
+  border: solid 1px var(--group3);
+}
+.group_4 .btn-outline-secondary {
+  border: solid 1px var(--group4);
+}
+.group_5 .btn-outline-secondary {
+  border: solid 1px var(--group5);
+}
+.group_6 .btn-outline-secondary {
+  border: solid 1px var(--group6);
+}
+
+/* OTHER STUFF */
+
+#quoteGenerator {
+  color: var(--accent-color2) !important;
+}
+
+.link-buttons .btn {
+  margin: 1%;
+}
+
+.how-can-you-help .btn {
+  top: -8px;
+  position: relative;
+}
+
+/* MOBILE OVERFLOW FIX (Maybe not best practises...) */
+@media (max-width: 768px) {
+  html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .filter-links{
+    width: 100%;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+  }
+
+  .fa:hover {
+    color: var(--accent-color2);
+  }

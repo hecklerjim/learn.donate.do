@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Donate Do</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/0bd5930842.js" crossorigin="anonymous"></script>
+</head>
+<body onload="randomize(), quoteGenerator()">
+  <div class="container" align="center">
+    <div class="row">
+      <div class="col">
+        <h1>Learn, Donate, Do.</h1>
+        <h2></h2>
+        <p>Spread awareness, act now and don't accept passivity.</p>
+        <hr>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="more-resources.html">More Resources</a>
+              </li>
+          </ul>
+      </div>
+      <div class="mx-auto order-0">
+          <a class="navbar-brand mx-auto" href="index.html"><i class="fa fa-globe" aria-hidden="true"></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contribute.html">Contribute</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <hr>
+
+  <!-- ABOUT THIS PROJECT -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>About this Project</h1>
+      <p>This project was inspired by <a href="https://blacklivesmatters.carrd.co/#" target="blank">this</a> carrd supporting the June 2020 protests for George Floyd. Learn, Donate, Do is meant to educate, inspire and support tangible action. Together we can fight injustice and make the world a better place for all. 
+        <br>
+        Browse <a href="index.html">our cards</a> to learn about some of the issues we currently face, and to find resources so that you can make your mark and fight for what you believe.
+        <br>
+        Because our cards offer quick concise links to valuable resources, <em>Learn, Donate, Do</em> is a great medium to disseminate vital information about pressing issues. It is lightweight and sharable. 
+      <br>
+        <a href="index.html" class="btn btn-outline-secondary"><i class="fa fa-id-badge" aria-hidden="true"></i> View All Our Cards</a>
+        
+        <h2>What this website is <span style="font-weight: bold">not</span>.</h2>
+  <Em>Learn, Donate, Do</Em> is meant to be used as a <em>jumping off point</em> to begin learning and educating yourself. We are not an intelectual authority on these issues, but rather want to compile a list of useful resources to educate and inspire action.
+
+  <hr>
+      <p>See something missing? Have a question or concern?.</p>
+
+      <a href="contact.html" class="btn btn-outline-secondary"><i class="fa fa-envelope-o" aria-hidden="true"></i> Get in Touch</a>
+      <hr>
+    </div>
+  </div>
+
+
+  <!-- FAQ -->
+
+  <div class="row">
+    <div class="col" id="faq">
+      <h1>FAQ</h1>
+    </div>
+  </div>
+  <div class="accordion" id="accordionExample">
+    <div class="card bg-light">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            What is this website?
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>EverythingWrongintheWorld.com is designed to highlight as many of the attorcities in the world as possible. Have you ever noticed how you hear non-stop about a certain issue for a week or two, and then suddenly it completely disapears from the media? We collectively seem to forget that, for example, Hong Kong is <a href="/pages/umbrella-protests.html">still protesting</a>, or that China is still <a href="/pages/uighur-muslims">incarcerating Uighur Muslims</a> at an astounding rate. This website serves to remeber <em>all</em> the injustices, not just the 'trending' or #popular ones. And beyond that, it shows how you can directly help by compiling links to organizations working tirelessly to solve these issues.</p>
+          <a href="/index.html" class="btn btn-outline-secondary">Browse Attorcities</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Are you speaking for marginalized groups?
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          The purpose of this website is not to act as an intellectual authority on these issues, but rather to compile a list of resources so readers can do their own research. We cannot possibly provide definitive answers to <em>all</em> the problems in the world (although we would like to), but we can provide links to people and organizations who are doing what we deem to be work in the right direction. If you are personally affected by an issue and feel we have misconstrued it, please <a href="contact.html">get in touch</a> so we can rectify our mistake as soon as possible. 
+        </div>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How is this different to good journalisim?
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          This project is only meant to suppliment traditional journalism. It exists as a way to quickly remember various things that are happening in the world right now, and links to learn more about the issues. <em>Learn, Donate, Do</em> works in conjunction with honest investigative journalism. But, unlike most news outlets, we aren't tied to the <a href="https://www.theodysseyonline.com/dangers-24-hour-news-cycle" target="blank">24-hour news cycle</a>.
+        </div>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+            Who are you to decide what issues matter?
+          </button>
+        </h2>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          This project strives to post information about as many issues as possible. Unfortunately, there are many problems in the world, so we must rely on the help of informed contributors. If you see that an important issue is missing, please <a href="contribute.html">contribute</a> to the project. You can see past contributors <a href="contribute.html#contributors">here</a>.
+        </div>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+            Is your selection of issues biased?
+          </button>
+        </h2>
+      </div>
+      <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          The short answer is yes. Although <em>Learn, Donate, Do</em> strives for unbiased objectivity, this is an unnatainable goal. Our selection of which issues matter is a form of bias in itself. If you have any ideas on how we can reduce our biases, please don't hesitate to <a href="contact.html">get in touch</a>.
+        </div>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+            <em>Learn, Donate, Do</em> is depressing.
+          </button>
+        </h2>
+      </div>
+      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+        <div class="card-body">
+          Negative feelings when confronted with this many problems is a natural response. Yes, the world has many problems, but there are also many people working their hardest to fix things. Check out our list of <a href="good-things-people-are-doing">'good things'</a> happening right now. Also, please see our <a href="pages/mental-health">mental health</a> card for resources. Remember, you aren't in this alone. There are many like-minded indivudals working hard to make the world a better place. 
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- FAQ and LINKS -->
+    <div class="row">
+      <div class="col-lg-12">
+        <hr>
+        <p id="quoteGenerator"></p>
+      </div>
+      <div class="col-12">
+        <hr>
+      </div>
+    </div>
+      
+      <div class="row">
+        
+        <div class="col-lg-12">
+          <a href="more-resources.html" class="btn btn-outline-secondary">Educational Resources</a>
+        </div>
+       
+      </div>
+      <hr>
+      <div class="col-lg-12">
+        <h1>How can you help?</h1>
+        <p>If you want to help Learn, Donate, Do continue to educate and activate concerned citizens across the world, please consider helping us out!</p>
+      </div>
+      <div class="row">
+      <div class="col-lg-4">
+        <h2>Donate to this Project.</h2>
+        <p>Consider donating to help pay server costs. There will never be ads; this project is entirely funded by the generosity of its readers. You can see past donors <a href="contributors.html">here</a>. </p>
+        <a href="donate.html" class="btn btn-outline-secondary btn-lg"><i class="fa fa-dollar" aria-hidden="true"></i> Donate</a>
+      </div>
+      <div class="col-lg-4">
+        <h2>Submit a contribution.</h2>
+        <p>We rely on help from well-informed individuals to provide us with relevant issues, links and resources. If see that an important issue is missing here, please make a <a href="contribute.html">contribution</a>. You can see our past contributors <a href="contributors.html">here</a>.</p>
+        <a href="contribute.html" class="btn btn-outline-secondary btn-lg"><i class="fa fa-handshake-o" aria-hidden="true"></i> Contribute</a>
+      </div>
+      <div class="col-lg-4">
+        <h2>Share this website.</h2>
+        <p>Only have a few minutes to help out? Yes, slacktivism is a real problem, but spreading awareness of the issues is vital to fixing these problems. Please share.</p>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhecklerjim.github.io%2Feverythingwrong%2Findex.html&amp;src=sdkpreparse" class="btn btn-outline-secondary btn-lg"><i class="fa fa-facebook-square" aria-hidden="true"></i> Share</a>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+          <hr>
+        <p>Notice something missing? Please don't hesitate to <a href="contact.html">get in touch</a>.</p>
+      </div>
+    </div>
+    
+    
+    <!-- FOOTER -->
+    <div class="row">
+      <div class="col-lg-12">
+        <hr>
+        <p>Built and maintained by <a href="https://hecklerjim.github.io/seb-jagoe-portfolio1/" target="blank">Seb.</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
