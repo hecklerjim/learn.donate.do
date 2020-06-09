@@ -4,6 +4,7 @@
   --accent-color: #CEBEBE;
   --accent-color2: rgb(138, 116, 117);
   --accent-color3: #6D2E46;
+  --accent-color4: rgb(82, 34, 52);
   --grey-color: grey;
 
   --group1: #5C6B73;
@@ -79,8 +80,12 @@ body {
 
 h1 {
   font-family: "DM Serif Display", 'Times New Roman', Times, serif;
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: none !important;
+}
+
+.h1-size{
+  font-size: 4rem;
 }
 
 h2 {
@@ -96,12 +101,12 @@ p {
   font-family: "Jost", "Open Sans", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, Arial, Helvetica, sans-serif;
 }
 
-a {
-  color: var(--accent-color2)
+a, a:visited, a:active {
+  color: var(--accent-color3); 
 }
 
-a:hover, a:active, a:visited {
-  color: var(--accent-color3)
+a:hover  {
+  color: var(--accent-color4);
 }
 
 .filter-links {
@@ -197,6 +202,10 @@ a:hover, a:active, a:visited {
     font-size: 2rem;
   }
 
+  .h1-size{
+    font-size: 2.2rem;
+  }
+
   .filter-links{
     width: 100%;
   }
@@ -204,8 +213,4 @@ a:hover, a:active, a:visited {
   .navbar-brand {
     display: none;
   }
-  }
-
-  .fa:hover {
-    color: var(--accent-color2);
   }
