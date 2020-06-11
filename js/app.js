@@ -40,18 +40,24 @@ function quoteGenerator() {
 
 // COPY FUNCTION
 
-function copyFunction() {
-  var copyText = document.getElementById("myInput");
+function cardButtonShareLoader() {
+  const URL = window.location.href;
+  document.getElementById('card-button-copy').innerHTML = '<a onClick="copiedToClipboardCard()" class="btn btn-outline-secondary btn-lg btnClipboardJS" data-clipboard-text="' + URL + '" id="alertCard">Share This Card</a>'
+}
 
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
 
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
 
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+function copiedToClipboard() {
+  document.getElementById('alert').innerHTML = '<i class="fa fa-check" aria-hidden="true"></i> Copied!';
+  setTimeout(function(){document.getElementById('alert').innerHTML = '<i class="fa fa-link" aria-hidden="true"></i> Copy URL';}, 5000);
+}
+
+function copiedToClipboardCard() {
+  document.getElementById('alertCard').innerHTML = '<i class="fa fa-check" aria-hidden="true"></i> URL Copied!';
+  // function revertCopied() {
+  //   document.getElementById('alert').innerHTML = '<i class="fa fa-link" aria-hidden="true"></i> Copy URL';
+  // }
+  setTimeout(function(){document.getElementById('alertCard').innerHTML = '<i class="fa fa-link" aria-hidden="true"></i> Copy URL Again';}, 5000);
 }
 
 // CONTENT LOADERS

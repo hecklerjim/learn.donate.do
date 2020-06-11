@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/0bd5930842.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <body onload="quoteGenerator(), navLoader(), footerLoader()">
+  <body onload="quoteGenerator(), navLoader(), footerLoader(), cardButtonShareLoader()">
   
   <div id="nav-placeholder"></div>
 
@@ -48,6 +48,7 @@
             
             </p>
           </div>
+          <div id="card-button-copy"><a onClick="copiedToClipboardCard()" class="btn btn-outline-secondary btn-lg btnClipboardJS" data-clipboard-text="copied" id="alertCard">Share This Card</a></div>
           <a href="index.html" class="btn btn-outline-secondary btn-lg">View All Cards</a>
         </div>
       </div>
@@ -67,25 +68,21 @@
         <p id="quoteGenerator"></p>
         <hr>
       </div>
-      <div class="col-12">
-        
-      </div>
     </div>
-      
-      <div class="row link-buttons">
-        <div class="col-lg-4">
-          <a href="about.html" class="btn btn-outline-secondary">What is this website?</a>
-        </div>
-        <div class="col-lg-4">
-          <a href="faq.html" class="btn btn-outline-secondary">Frequently Asked Questions</a>
-        </div>
-        <div class="col-lg-4">
-          <a href="more-resources.html" class="btn btn-outline-secondary">Educational Resources</a>
-        </div>
-       
+    <!-- MORE RESOURCE BUTTONS -->
+    <div class="row link-buttons">
+      <div class="col-lg-4">
+        <a href="about.html" class="btn btn-outline-secondary">What is this website?</a>
       </div>
+      <div class="col-lg-4">
+        <a href="faq.html" class="btn btn-outline-secondary">Frequently Asked Questions</a>
+      </div>
+      <div class="col-lg-4">
+        <a href="more-resources.html" class="btn btn-outline-secondary">Educational Resources</a>
+      </div>
+      
+    </div>
       <hr>
-  </div>
 
   <div id="footer-placeholder"></div>
   
@@ -96,5 +93,9 @@
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script>
+    new ClipboardJS('.btnClipboardJS');
+  </script>
 </body>
 </html>

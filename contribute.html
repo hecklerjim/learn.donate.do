@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EverythingWrongintheWorld.com</title>
+  <title>Contribute | Learn, Donate, Do.</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -34,11 +34,14 @@
     <div class="col-lg-12 card bg-light mb-3">
       <h1>Share this Website</h1>
       <h2>Spread awareness.</h2>
-      <p>The more people we reach, the more impact our actions can have. Please share now to tell your friends and family about the issues that matter to you. This 'copy url' button is terrible right now but will be updated soon using clipboard.js.</p>
-      <input type="text" value="LearnDonateDo.com" id="myInput"><br>
-        <button onClick="copyFunction()" class="btn btn-outline-secondary btn-lg"><i class="fa fa-link" aria-hidden="true"></i> Copy URL</button>
-        <a href=""></a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhecklerjim.github.io%2Feverythingwrong%2Findex.html&amp;src=sdkpreparse" class="btn btn-outline-secondary btn-lg"><i class="fa fa-facebook-square" aria-hidden="true"></i> Share</a>
+      <p>The more people we reach, the more impact our actions can have. Tell your friends and family about the issues that matter to you.</p>
+      <!-- FACEBOOK SHARE -->
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhecklerjim.github.io%2Feverythingwrong%2Findex.html&amp;src=sdkpreparse" class="btn btn-outline-secondary btn-lg"><i class="fa fa-facebook-square" aria-hidden="true"></i> Share</a>
+      <!-- TWITTER SHARE -->
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="btn btn-outline-secondary btn-lg" data-hashtags="LearnDonateDo" data-show-count="false"><i class="fa fa-twitter-square" aria-hidden="true"></i> Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!-- COPY TO CLIPBOARD SHARE -->
+      <button onClick="copiedToClipboard()" class="btn btn-outline-secondary btn-lg btnClipboardJS" data-clipboard-text="https://LearnDonateDo.com/" id="alert"><i class="fa fa-link" aria-hidden="true"></i> Copy URL</button>
+    </button>
     </div>
     <div class="row">
   </div>
@@ -59,7 +62,7 @@
     <p><i class="fa fa-circle" aria-hidden="true"></i> Sir Edmund The Grand <a href="#">Link to their website.</a></p>
   </div>
     </div>
-    <a href="/index.html" class="btn btn-outline-secondary"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back Home</a>
+    <a href="index.html" class="btn btn-outline-secondary"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back Home</a>
     <!-- FOOTER -->
     <div class="row">
       
@@ -80,5 +83,9 @@
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script>
+    new ClipboardJS('.btnClipboardJS');
+  </script>
 </body>
 </html>
