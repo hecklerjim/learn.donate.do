@@ -6,4 +6,6 @@ Learn, Donate, Do is designed to highlight as many of the attorcities in the wor
 
 🚀 View the site <a href="https://hecklerjim.github.io/learn.donate.do/">here</a>.
 
+Note: most of the cards have not been coded. If you want to see an example of what they could look like see a completed card <a href="https://hecklerjim.github.io/learn.donate.do/coastal-gas-pipeline.html">here</a>
+
 👋 Contact me <a target="_blank" href="https://sebjagoe.com/contact">here</a>.
