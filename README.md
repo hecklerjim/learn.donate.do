@@ -4,6 +4,6 @@ Learn, Donate, Do is designed to highlight as many of the attorcities in the wor
   
   I need contributors, ideas or moral support. This is a big undertaking and I simply don't have time. I think this project could really do a lot of good, but I can't make it happen by myself. Please contact me if you want to get involved or have some advice for me.
 
-View the site <a href="https://hecklerjim.github.io/learn.donate.do/">here</a>.
+🚀 View the site <a href="https://hecklerjim.github.io/learn.donate.do/">here</a>.
 
-Contact me <a target="_blank" href="https://sebjagoe.com/contact">here</a>.
+👋 Contact me <a target="_blank" href="https://sebjagoe.com/contact">here</a>.
